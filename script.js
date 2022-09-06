@@ -1,12 +1,12 @@
-function handleSomeDiv(someDiv) { 
-    console.log("div was handled");
+// function handleSomeDiv(someDiv) { 
+//     console.log("div was handled");
     
-}
+// }
 
 const observer = new MutationObserver(function (mutations, mutationInstance) {
     const someDiv = document.evaluate("//span[text()='Proponowana dla Ciebie']/../../../../../..", document, null, XPathResult.ANY_TYPE, null);
     if (someDiv) {
-        handleSomeDiv(someDiv);
+        // handleSomeDiv(someDiv);
         someDiv.remove
     }
 });
