@@ -3,10 +3,9 @@ const observer = new MutationObserver(function (mutations, mutationInstance) {
         if (someDiv) {
             someDiv.remove()
         }
-    });
+})    
     
-    
-    observer.observe(document, {
-        childList: true,
-        subtree:   true
-    });
+observer.observe(document, {
+    childList: true,
+    subtree:   true
+})
